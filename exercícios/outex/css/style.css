@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*
+    COMANDOS DE FLEXBOX
+
+display: flex; ou display: inline-flex;
+
+Define um contêiner flexível. display: flex; cria um contêiner em nível de bloco, enquanto display: inline-flex; cria um contêiner em nível de linha.
+flex-direction
+
+Define a direção dos itens no contêiner flexível.
+Valores: row (padrão), row-reverse, column, column-reverse.
+flex-wrap
+
+Define se os itens devem ou não ser quebrados em várias linhas.
+Valores: nowrap (padrão), wrap, wrap-reverse.
+flex-flow
+
+Combinação abreviada de flex-direction e flex-wrap.
+Exemplo: flex-flow: row wrap;.
+justify-content
+
+Alinha os itens ao longo do eixo principal.
+Valores: flex-start (padrão), flex-end, center, space-between, space-around, space-evenly.
+align-items
+
+Alinha os itens ao longo do eixo transversal (perpendicular ao eixo principal).
+Valores: stretch (padrão), flex-start, flex-end, center, baseline.
+align-content
+
+Alinha as linhas do contêiner flexível quando há espaço extra no eixo transversal.
+Valores: stretch (padrão), flex-start, flex-end, center, space-between, space-around.
+Propriedades dos Itens Flexíveis
+order
+
+Define a ordem dos itens dentro do contêiner flexível.
+Valor: número inteiro (padrão é 0).
+flex-grow
+
+Define a capacidade de um item de crescer em relação aos outros itens flexíveis.
+Valor: número (padrão é 0).
+flex-shrink
+
+Define a capacidade de um item de encolher em relação aos outros itens flexíveis.
+Valor: número (padrão é 1).
+flex-basis
+
+Define o tamanho base inicial de um item antes de o espaço extra ser distribuído.
+Valor: comprimento, porcentagem ou auto (padrão é auto).
+flex
+
+Combinação abreviada de flex-grow, flex-shrink e flex-basis.
+Exemplo: flex: 1 0 auto;.
+align-self
+
+Alinha um item individual ao longo do eixo transversal, substituindo o align-items do contêiner.
+Valores: auto (padrão), flex-start, flex-end, center, baseline, stretch.
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+h2 {
+    margin: 20px 10px;
+    font-size: 30px;
+}
+
+.box {
+    width: 10px;
+    min-width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.box-1 {
+    background: #8CD2FF;
+}
+
+.box-2 {
+    background: #F28A87;
+}
+
+.box-3 {
+    background: #C9E167;
+}
